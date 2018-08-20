@@ -12,6 +12,7 @@ Author URI: http://www.designstub.com
 --------------*/
 
 /*-----------------
+0. variables.css
 1. Reset.css
 2. Helper Classes
 3. Home page banner
@@ -22,6 +23,9 @@ Author URI: http://www.designstub.com
 8. Subscribe form
 9. Media Queries
 ------------------*/
+
+/*----- 0. Variables.css -----*/
+@import './variables.css';
 
 
 /*----- 1. Reset.css -----*/
@@ -78,7 +82,7 @@ h1 {
   font-size: 16px;
 }
 
-/*----- Helper Classes -----*/
+/*----- 2. Helper Classes -----*/
 
 html * {
   -webkit-font-smoothing: antialiased;
@@ -106,12 +110,12 @@ p {
 
 ::-moz-selection {
     color: #FFFFFF;
-    background: #00aeda;
+    background: var(--brand-style1-color-3);
 }
 
 ::selection {
     color: #FFFFFF;
-    background: #00aeda;
+    background: var(--brand-style1-color-3);
 }
 
 .nopadding {
@@ -357,7 +361,7 @@ p {
 	font-size: 14px;
 	padding-top: 5px;
 	height: 60px;
-	background-color: rgba(0, 174, 218, 1);
+	background-color: var(--brand-style1-color-3);
 	-webkit-transition: all 0.6s;
 	-moz-transition: all 0.6s;
 	-o-transition: all 0.6s;
@@ -373,7 +377,7 @@ p {
 }
 
 .navbar-default.past-main .navbar-nav > li > a {
-  color: #fff;
+  color: #333;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
@@ -452,8 +456,8 @@ p {
 
 .btn-action {
  font-family: 'Roboto', sans-serif;
- background-color: #00aeda;
- border: 1px solid #00aeda;
+ background-color: var(--brand-style1-color-3);
+ border: 1px solid var(--brand-style1-color-3);
  border-radius: 0;
  color: #FFFFFF;
  font-size: 15px;
@@ -473,9 +477,9 @@ p {
 .btn-action:active, .btn-action:active:focus {
  background: transparent;
  outline: none;
- color: #00aeda;
+ color: var(--brand-style1-color-3);
  background: transparent;
- border-color: #00aeda;
+ border-color: var(--brand-style1-color-3);
 }
 
 
@@ -544,7 +548,7 @@ font-family: Arial;
 /*---------------- Form Home Styling ------------------- */
 
 .form .hero-section {
-	background:url(../images/header-bg.jpg);
+	background:url(../images/header-bg.jpeg);
 	background-size: cover;
 	padding: 150px 0 0 0;
 }
@@ -609,15 +613,15 @@ font-family: Arial;
 }
 
 .form .btn-action {
-	background: #00aeda;
-	border-color: #00aeda;
+	background: var(--brand-style1-color-3);
+	border-color: var(--brand-style1-color-3);
 	color: #FFFFFF;
 }
 
 .form .btn-action:hover {
 	background: transparent;
-	border-color: #00aeda;
-	color: #00aeda;
+	border-color: var(--brand-style1-color-3);
+	color: var(--brand-style1-color-3);
 }
 
 
@@ -677,7 +681,7 @@ font-family: Arial;
 
 .signup-form {
 	padding: 25px 25px 30px 25px;
-	background: #00aeda;
+	background: var(--brand-style1-color-3);
 	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
 	text-align: left;
 }
@@ -714,34 +718,34 @@ font-family: Arial;
 
 
 .signup .btn-action.btn-round {
-	background: #00aeda;
-	border-color: #00aeda;
+	background: var(--brand-style1-color-3);
+	border-color: var(--brand-style1-color-3);
 	color: #FFFFFF;
 	font-size: 15px;
 	padding: 12px 24px;
 	font-weight: 600;
 	text-transform: capitalize;
-	border: 2px solid #00aeda;
+	border: 2px solid var(--brand-style1-color-3);
 	border-radius: 30px;
 }
 
 .signup .btn-action.btn-round:hover, .signup .btn-action.btn-round:focus {
 	background: transparent;
-	color: #00aeda;
-	border-color: #00aeda;
+	color: var(--brand-style1-color-3);
+	border-color: var(--brand-style1-color-3);
 }
 
 
 .signup .btn-action {
-	background: #00aeda;
-	border-color: #00aeda;
+	background: var(--brand-style1-color-3);
+	border-color: var(--brand-style1-color-3);
 	color: #FFFFFF;
 }
 
 .signup .btn-action:hover {
 	background: transparent;
-	border-color: #00aeda;
-	color: #00aeda;
+	border-color: var(--brand-style1-color-3);
+	color: var(--brand-style1-color-3);
 }
 
 
@@ -959,13 +963,13 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 .app .btn-action {
 	color: #FFFFFF;
-	background: #00aeda;
-	border-color: #00aeda;
+	background: var(--brand-style1-color-3);
+	border-color: var(--brand-style1-color-3);
 	 border-radius: 30px;
 }
 
 .app .btn-action:hover {
-	color: #00aeda;
+	color: var(--brand-style1-color-3);
 	background: #222225;
 	border-color: #222225;
 }
@@ -1083,7 +1087,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 /* ----- Client Sectiion Styling ----- */
 
 .client-section {
-	background-color: #00aeda;
+	background-color: var(--brand-style1-color-3);
 	padding: 5px 0 0 0;
 }
 
@@ -1133,7 +1137,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 .pitch-icon {
 	margin: 0 0 10px 0;
-	background: #00aeda;
+	background: var(--brand-style1-color-3);
 	width: 60px;
 	height: 60px;
 	display: inline-block;
@@ -1324,14 +1328,14 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 .feature-sub .sub-inner .btn-action {
 	color: #FFFFFF;
-	background: #00aeda;
-	border-color: #00aeda;
+	background: var(--brand-style1-color-3);
+	border-color: var(--brand-style1-color-3);
 }
 
 .feature-sub .sub-inner .btn-action:hover {
-	color: #00aeda;
+	color: var(--brand-style1-color-3);
 	background: transparent;
-	border-color: #00aeda;
+	border-color: var(--brand-style1-color-3);
 }
 
 .feature-sub {
@@ -1407,7 +1411,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 .app-features .icon i {
 	font-size: 60px;
-	color: #00aeda;
+	color: var(--brand-style1-color-3);
 }
 
 
@@ -1443,6 +1447,12 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	background: #F9F9F9;
 	padding: 50px 0 50px 0;
 	overflow: hidden;
+	position: relative;
+}
+
+.split-features2 {
+	overflow: hidden;
+	position: relative;
 }
 
 .signup .split-features {
@@ -1459,17 +1469,20 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 }
 
 .split-content h1 {
+	color: var(--split-content-text-color);
 	font-size: 37px;
 	font-weight: 900;
 	letter-spacing: -1px;
 	margin: 0 0 20px 0;
+	text-shadow: var(--split-content-text-shadow);
 }
 
 .split-content p {
 	font-size: 16px;
 	line-height: 1.4;
-	color: #A1A1A1;
+	color: var(--split-content-text-color);
 	letter-spacing: 0;
+	text-shadow: var(--split-content-text-shadow);
 }
 
 .split-content ul {
@@ -1484,7 +1497,8 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	letter-spacing: 0;
 	margin-bottom: 15px;
 	margin-left: 15px;
-	color: #A1A1A1;
+	color: var(--split-content-text-color);
+	text-shadow: var(--split-content-text-shadow);
 }
 
 .split-features2 {
@@ -1502,7 +1516,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 .review-section {
 	padding: 150px 0 150px 0;
 	text-align: center;
-	background: #00aeda;
+	background: var(--brand-style1-color-3);
 }
 
 
@@ -1651,7 +1665,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 .table-left .icon, .table-right .icon {
 	font-size:60px;
 	margin: 0 auto;
-	color:#00aeda;
+	color:var(--brand-style1-color-3);
 }
 
 .table-left .pricing-details span, .table-right .pricing-details span {
@@ -1736,7 +1750,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 .counter-icon i {
   font-size: 48px;
-  color: #00aeda;
+  color: var(--brand-style1-color-3);
 }
 
 .counter-text {
@@ -1763,7 +1777,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 .cta-sub {
 	padding-top: 150px;
 	padding-bottom: 150px;
-	background: linear-gradient(to right, rgba(0, 174, 218, 0.5), rgba(0, 174, 218, 0.9)), url(../images/cta_bg.jpg) no-repeat center center;
+	background: linear-gradient(to right, var(--brand-style1-color-3), var(--brand-style1-color-1)), url(../images/cta_bg.jpg) no-repeat center center;
 	background-size: cover;
 }
 
@@ -1903,7 +1917,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 .contact i {
 	font-size: 42px;
-	color: #00aeda;
+	color: var(--brand-style1-color-3);
 	text-align: left;
 }
 
@@ -1930,7 +1944,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 	font-size: 18px;
 	font-weight: 400;
-	color: #00aeda;
+	color: var(--brand-style1-color-3);
 	text-decoration: none;
 	display: inline-block;
 }
@@ -1957,7 +1971,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 }
 
 .footer-menu li a {
-	color: #00aeda;
+	color: var(--brand-style1-color-3);
 	text-decoration: none;
 }
 
@@ -1973,7 +1987,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 .footer-text p {
 font-family:"Open Sans";
 font-size: 12px;
-	color: #00aeda;
+	color: var(--brand-style1-color-3);
 	font-weight: 400;
 	line-height: 1.4;
 	margin-top: 10px;
@@ -1992,7 +2006,7 @@ font-size: 12px;
 
 
 .back-to-top {
-	background: rgba(0, 174, 218, 0.5);
+	background: var(--brand-style1-color-3);
 	margin: 0;
 	position: fixed;
 	bottom: 30px;
@@ -2019,7 +2033,7 @@ font-size: 12px;
 }
 
 .back-to-top:hover {
-    background: rgba(0, 174, 218, 0.9);
+    background: var(--brand-style1-color-1);
     color: #FFFFFF;
 }
 
@@ -2145,7 +2159,7 @@ font-size: 12px;
 	}
 
 	.split-content {
-		padding: 70px 350px 50px 10px;
+		padding: 70px 200px 50px 50px;
 		text-align: left;
 	}
 	
@@ -2279,3 +2293,31 @@ padding: 70px 10px 50px 350px;
 /*---------------------------------------------------
 ------- Media Queries for Split Layout Ends ---------
 ---------------------------------------------------*/
+
+
+.hero-section,
+.split-features,
+.split-features2,
+.feature-sub,
+.pricing-section,
+.cta-sub,
+.footer {
+	border-bottom: 3px solid #aaa;
+}
+
+.hero-section:before,
+.split-features:before,
+.split-features2:before {
+	background-color: rgba(0, 0, 0, 0.5);
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.split-features {
+	background-size: cover;
+}

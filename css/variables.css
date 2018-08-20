@@ -1,0 +1,15 @@
+
+/* Variables */
+
+/* Colors */
+:root {
+  --brand-style1-color-1: RGBA(137,3,9,1.00);
+  --brand-style1-color-2: RGBA(133,133,133,1.00);
+  --brand-style1-color-3: RGBA(181,57,50,1.00);
+  --brand-style1-color-4: RGBA(145,89,92,1.00);
+  --brand-style1-color-5: RGBA(21,23,27,1.00);
+
+  /* */
+  --split-content-text-color: #fff;
+  --split-content-text-shadow: 0 0 25px #000;
+}

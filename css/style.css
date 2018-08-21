@@ -229,18 +229,18 @@ p {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #111111;
+  background-color: #fff;
 }
 
 .navbar-default .navbar-brand .navbar-toggle .collapsed {
-    padding: 4px 6px;
+    padding: 0;
     font-size: 14px;
-    color: #111111;
+    color: #fff;
   }
 
 .navbar-default .navbar-brand {
-	padding-top: 5px;
-	color: #111111;
+	color: #fff;
+	padding: 0;
 	-webkit-transition: 200ms;
 	-moz-transition: 200ms;
 	-o-transition: 200ms;
@@ -275,7 +275,7 @@ p {
 
 .navbar-default .navbar-nav > .active > a:focus {
 	background: transparent;
-  color: #111111;
+  color: #fff;
 }
 
 .navbar-default .navbar-collapse {
@@ -284,7 +284,7 @@ p {
 }
 
 .navbar-default .navbar-nav .open .dropdown-toggle {
-  color: #111111;
+  color: #fff;
 }
 
 .navbar-default .nav-white > li > a {
@@ -342,7 +342,8 @@ p {
 
   .navbar-default .navbar-brand {
     color: #FFFFFF;
-		padding: 16px 15px !important;
+		margin-left: 15px;
+		padding: 3px !important;
   }
 
 	.navbar-default .navbar-brand.nav-white {
@@ -350,7 +351,7 @@ p {
 	}
 
   .navbar-default .navbar-toggle .icon-bar {
-    background-color: #111111;
+    background-color: #fff;
   }
 }
 
@@ -361,7 +362,7 @@ p {
 	font-size: 14px;
 	padding-top: 5px;
 	height: 60px;
-	background-color: var(--brand-style1-color-3);
+	background-color: var(--brand-style1-color-5);
 	-webkit-transition: all 0.6s;
 	-moz-transition: all 0.6s;
 	-o-transition: all 0.6s;
@@ -369,21 +370,21 @@ p {
 }
 
 .navbar-default.past-main .navbar-brand {
-	color: #111111;
+	color: #fff;
 }
 
 .navbar-default.past-main .navbar-toggle .icon-bar {
-	background-color: #111111;
+	background-color: #fff;
 }
 
 .navbar-default.past-main .navbar-nav > li > a {
-  color: #333;
+  color: #fff;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
 .navbar-default.past-main .navbar-nav > li > a:hover {
-  color: #111111;
+  color: #eee;
 }
 
 .navbar-default.past-main .navbar-nav > .active > a {
@@ -409,7 +410,7 @@ p {
 }
 
 .navbar-default.past-main .nav-white .navbar-toggle .icon-bar {
-	background-color: #111111;
+	background-color: #fff;
 }
 
 /* ------------------------------------------------------
@@ -796,7 +797,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
     margin: 0;
     padding: 0 20px;
     vertical-align: middle;
-    background: #111111;
+    background: #fff;
     border: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -855,7 +856,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 .slider-pro h2.sp-layer {
 	font-size: 44px !important;
-	color: #111111;
+	color: #fff;
 	font-weight: bold;
 	letter-spacing: -1px;
 	line-height: 1.3;
@@ -1068,7 +1069,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	font-family: 'Josefin Sans';
 	font-size: 24px;
 	line-height: 1.2;
-	color: #111111;
+	color: #fff;
 }
 
 .about-content h3 {
@@ -1078,7 +1079,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	line-height: 1;
 	letter-spacing: 1px;
 	text-transform: capitalize;
-	color: #111111;
+	color: #fff;
 	margin: 50px 0 0 0;
 }
 
@@ -1487,8 +1488,8 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 .split-content ul {
 	list-style-type: disc;
-	display: inline-block;
-	margin: 30px 0 0 0;
+	display: block;
+	margin: 30px 0;
 }
 
 .split-content ul li {
@@ -1622,7 +1623,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	height: 100%;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background: #2e2e30;
+	background: var(--brand-style1-color-3);
 }
 
 .pricing-intro {
@@ -1640,7 +1641,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 .pricing-intro p {
 	font-size: 15px;
-	color: #a1a1a1;
+	color: #fff;
 	font-weight: 300;
 	line-height: 1.4;
 	letter-spacing: 1px;
@@ -1650,9 +1651,10 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 .pricing-section .table-left, .pricing-section .table-right {
 	padding: 20px 20px 50px 20px;
+	color: 222225;
 	margin: 0 auto;
 	margin-bottom: 30px;
-	background-color: #222225;
+	background-color: #fff;
 	box-shadow: 0px 0px 80px 0px rgba(0,0,0,.1);
 	border: transparent;
 	width: 100%;
@@ -1673,7 +1675,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	font-family: 'Roboto', sans-serif;
 	font-size: 48px;
 	font-weight: 700;
-	color: #FFF;
+	color: var(--brand-style1-color-3);
 	margin-bottom: 20px;
 }
 
@@ -1934,7 +1936,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 
 	font-size: 14px !important;
 	font-weight: 400;
-	color: #111111;
+	color: #fff;
 	line-height: 1.3;
 	margin: 10px 0 20px 0 !important;
 	text-align: left;
@@ -2294,6 +2296,26 @@ padding: 70px 50px 50px 200px;
 ------- Media Queries for Split Layout Ends ---------
 ---------------------------------------------------*/
 
+.scrolled .navbar-brand > img {
+	opacity: 1;
+} 
+
+.navbar-brand > img {
+	opacity: 0;
+	height: 100%;
+	transition: 0.5s;
+}
+
+.hero-section > .container {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.hero-content > img {
+	display: block;
+	max-width: 400px;
+}
 
 .hero-section,
 .split-features,
@@ -2320,4 +2342,23 @@ padding: 70px 50px 50px 200px;
 
 .split-features {
 	background-size: cover;
+}
+
+
+
+/* gmap */
+.gmap_container > .container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
+.mapouter,
+.gmap_canvas {
+	height: 100%;
+	width: 100%;
+}
+
+#gmap_canvas {
+	height: 600px;
+	width: 100%;
 }
